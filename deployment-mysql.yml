@@ -5,18 +5,27 @@ metadata:
   labels:
     app: mysql
 spec:
-  containers:
-    - name: mysql
-      image: mysql
-      env:
-      - name: MYSQL_ROOT_PASSWORD
-        value: "rootpassword"
-      - name: MYSQL_DATABASE
-        value: "wordpress"
-      - name: MYSQL_USER
-        value: "wordpress"
-      - name: MYSQL_PASSWORD
-        value: "wordpresspassword"
-      ports:
-      - containerPort: 3306
-        name: mysql
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql
+  template:
+    metadata:
+      labels:
+        app: mysql
+    spec:
+      containers:
+      - name: mysql
+        image: mysql:latest
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: "rootpassword"
+        - name: MYSQL_DATABASE
+          value: "wordpress"
+        - name: MYSQL_USER
+          value: "wordpress"
+        - name: MYSQL_PASSWORD
+          value: "wordpresspassword"
+        ports:
+        - containerPort: 3306
+          name: mysql
