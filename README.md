@@ -20,7 +20,7 @@ Ce projet consiste à déployer une application WordPress en utilisant exclusive
 
 ## Structure du projet
 
-```plaintext
+```
 mini-projet-bootcamp-wordpress/
 ├── deployment-mysql.yaml             # Deployment MySQL
 ├── deployment-wordpress.yaml         # Deployment WordPress
@@ -30,6 +30,7 @@ mini-projet-bootcamp-wordpress/
 ├── service-cluster-ip-mysql.yaml     # Service MySQL (ClusterIP)
 ├── service-nodeport-wordpress.yaml   # Service WordPress (NodePort)
 ├── README.md                         # Documentation du projet
+````
 
 ## Déploiement
 
