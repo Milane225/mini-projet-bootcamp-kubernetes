@@ -48,9 +48,15 @@ kubectl get namespace
 ## 2- Provisionnement du PersistentVolume (PV)
 ### ==> Provisionnement du PersistentVolume (PV)
 ```
-kubectl apply -n bootcamp- -f pv.yml
+kubectl apply -n mini-projet-wordpress -f pv.yml
 ```
 ### ==> Vérification du PersistentVolume (PV)
-```
-kubectl get namespace
-```
+````
+kubectl get pv -o wide
+````
+````
+kubectl get pv pv -o wide
+````
+````
+kubectl describe  pv pv
+````
