@@ -30,3 +30,15 @@ mini-projet-bootcamp-wordpress/
 ├── service-cluster-ip-mysql.yaml     # Service MySQL (ClusterIP)
 ├── service-nodeport-wordpress.yaml   # Service WordPress (NodePort)
 ├── README.md                         # Documentation du projet
+
+## Déploiement
+
+## 1- Lancement et vérification du namespace
+### a- Lancement du namespace
+```
+kubectl apply -f namespace.yml
+```
+### b- Vérification du namespace
+```
+kubectl get namespace
+```
