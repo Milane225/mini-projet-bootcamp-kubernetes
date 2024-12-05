@@ -22,11 +22,11 @@ Ce projet consiste à déployer une application WordPress en utilisant exclusive
 
 ```plaintext
 mini-projet-bootcamp-wordpress/
-├── mysql-deployment.yaml       # Deployment MySQL
-├── mysql-deployment.yaml       # Deployment MySQL
-├── mysql-service.yaml          # Service MySQL (ClusterIP)
-├── wordpress-deployment.yaml   # Deployment WordPress
-├── wordpress-service.yaml      # Service WordPress (NodePort)
-├── persistent-volume.yaml      # Configuration des volumes persistants
-├── persistent-volume-claim.yaml # Requête pour le volume persistant
-├── README.md                      # Documentation du projet
+├── deployment-mysql.yaml             # Deployment MySQL
+├── deployment-wordpress.yaml         # Deployment WordPress
+├── namespace.yaml                    # Création du NameSpace
+├── pv.yaml                           # Provisionnement du PersistentVolume (PV)
+├── pvc.yaml                          # Association du PersistentVolume (PV) au PersistentVolumeClaims (PVC)
+├── service-cluster-ip-mysql.yaml     # Service MySQL (ClusterIP)
+├── service-nodeport-wordpress.yaml   # Service WordPress (NodePort)
+├── README.md                         # Documentation du projet
