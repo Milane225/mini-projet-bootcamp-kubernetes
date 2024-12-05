@@ -35,11 +35,11 @@ mini-projet-bootcamp-wordpress/
 ## Déploiement
 
 ## 1- Lancement et vérification du namespace
-###   ==> Lancement du namespace
+### ==> Lancement du namespace
 ```
-   kubectl apply -f namespace.yml
+kubectl apply -f namespace.yml
 ```
-   ### b- Vérification du namespace
+### ==> Vérification du namespace
 ```
-   kubectl get namespace
+kubectl get namespace
 ```
