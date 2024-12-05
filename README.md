@@ -32,6 +32,7 @@ mini-projet-bootcamp-wordpress/
 ├── README.md                         # Documentation du projet
 ````
 
+
 ## Déploiement
 
 ## 1- Lancement et vérification du namespace
@@ -40,6 +41,16 @@ mini-projet-bootcamp-wordpress/
 kubectl apply -f namespace.yml
 ```
 ### ==> Vérification du namespace
+```
+kubectl get namespace
+```
+
+## 2- Provisionnement du PersistentVolume (PV)
+### ==> Provisionnement du PersistentVolume (PV)
+```
+kubectl apply -n bootcamp- -f pv.yml
+```
+### ==> Vérification du PersistentVolume (PV)
 ```
 kubectl get namespace
 ```
