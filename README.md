@@ -52,11 +52,27 @@ kubectl apply -n mini-projet-wordpress -f pv.yml
 ```
 ### ==> Vérification du PersistentVolume (PV)
 ````
-kubectl get pv -o wide
+kubectl get pv -n mini-projet-wordpress -o wide
 ````
 ````
-kubectl get pv pv -o wide
+kubectl get pv -n mini-projet-wordpress pv -o wide
 ````
 ````
-kubectl describe  pv pv
+kubectl describe pv -n mini-projet-wordpress pv
+````
+
+## 3- Association du PersistentVolume (PV) au PersistentVolumeClaims (PVC)
+### ==> Association du PersistentVolume (PV) au PersistentVolumeClaims (PVC)
+```
+kubectl apply -n mini-projet-wordpress -f pvc.yml
+```
+### ==> Vérification du PersistentVolumeClaims (PVC)
+````
+kubectl get pvc -n mini-projet-wordpress -o wide
+````
+````
+kubectl get pvc -n mini-projet-wordpress pvc -o wide
+````
+````
+kubectl describe pvc -n mini-projet-wordpress pvc
 ````
