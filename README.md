@@ -21,7 +21,7 @@ Ce projet consiste à déployer une application WordPress en utilisant exclusive
 ## Structure du projet
 
 ```
-mini-projet-bootcamp-wordpress/
+mini-projet-bootcamp-kubernetes/
 ├── deployment-mysql.yml             # Deployment MySQL
 ├── deployment-wordpress.yml         # Deployment WordPress
 ├── namespace.yml                    # Création du NameSpace
